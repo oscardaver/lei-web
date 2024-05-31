@@ -101,7 +101,7 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h1 class="section-title position-relative text-center mb-5">Los mejores precios que ofrecemos para los amantes de los postres </h1>
+                    <h1 class="section-title position-relative text-center mb-5">Los mejores precios que ofrecemos para los amantes de los postres</h1>
                 </div>
             </div>
             <div class="row">
@@ -114,7 +114,6 @@
                             <img class="rounded-circle w-100 h-100" src="imgg/producto-1.jpg" style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Galleta de chocolate</h5>
-                        <a href="" class="btn btn-sm btn-secondary">Ordenar</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
@@ -126,7 +125,6 @@
                             <img class="rounded-circle w-100 h-100" src="imgg/producto-2.jpeg" style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Galleta Red velvet</h5>
-                        <a href="" class="btn btn-sm btn-secondary">Ordenar</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
@@ -138,7 +136,6 @@
                             <img class="rounded-circle w-100 h-100" src="imgg/producto-3.jpeg" style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Galleta de frutos</h5>
-                        <a href="" class="btn btn-sm btn-secondary">Ordenar</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
@@ -150,7 +147,6 @@
                             <img class="rounded-circle w-100 h-100" src="imgg/producto-4.jpg" style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Crookie</h5>
-                        <a href="" class="btn btn-sm btn-secondary">Ordenar</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
@@ -162,7 +158,6 @@
                             <img class="rounded-circle w-100 h-100" src="imgg/producto-5.jpg" style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Postre Tres leche</h5>
-                        <a href="" class="btn btn-sm btn-secondary">Ordenar</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
@@ -174,7 +169,6 @@
                             <img class="rounded-circle w-100 h-100" src="imgg/producto-6.jpg" style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Brownie con oreo</h5>
-                        <a href="" class="btn btn-sm btn-secondary">Ordenar</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
@@ -186,7 +180,6 @@
                             <img class="rounded-circle w-100 h-100" src="imgg/producto-7.jpg" style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Brownie con arequipe</h5>
-                        <a href="" class="btn btn-sm btn-secondary">Ordenar</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
@@ -198,7 +191,6 @@
                             <img class="rounded-circle w-100 h-100" src="imgg/producto-8.jpg" style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Galleta de limon</h5>
-                        <a href="" class="btn btn-sm btn-secondary">Ordenar</a>
                     </div>
                 </div>
                 
@@ -206,7 +198,14 @@
         </div>
     </div>
     <!-- Products End -->
-
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="col-lg-3 col-md-6 mb-4 pb-2">
+            <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+                <h5 class="font-weight-bold mb-4">Menu</h5>
+                <a href="https://cookies-sweet.ola.click/products" class="btn btn-sm btn-secondary">Ordenar</a>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer Start -->
     <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
@@ -263,6 +262,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            var image = document.getElementById('myImage');
+            if (image.style.display === 'none') {
+                image.style.display = 'block'; // Mostrar la imagen
+            } else {
+                image.style.display = 'none'; // Ocultar la imagen (opcional, para toggle)
+            }
+        });
+    </script>
 </body>
 
 </html>
